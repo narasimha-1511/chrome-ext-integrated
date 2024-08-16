@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Extension With Integrated GPT",
+    "description": "This Extension Integrates GPT with the browser",
+    "version": "1.0",
+    "permissions": ["tabs", "scripting"],
+    "action": {
+      "default_title": "Making the Life Simplier",
+      "default_icon": "./gpt.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "background": {
+      "matches": ["<all_urls>"],
+      "service_worker": "background.js",
+      "type": "module"
+    }
+  }
+  
