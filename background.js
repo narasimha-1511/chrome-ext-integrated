@@ -1,1 +1,3 @@
-console.log("This is background  testing by narasimha")
+chrome.action.onClicked.addListener((tab) => {
+    chrome.tabs.create({ url: 'https://chat.openai.com/' });
+  });

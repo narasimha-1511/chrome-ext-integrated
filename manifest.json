@@ -7,8 +7,7 @@
     "host_permissions": ["https://chat.openai.com/"],
     "action": {
       "default_title": "Making the Life Simplier",
-      "default_icon": "./gpt.png",
-      "default_popup": "popup.html"
+      "default_icon": "./gpt.png"
     },
     "content_scripts": [
       {
